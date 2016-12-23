@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="OrderCofirmation is a collaboration entity that provides all necessary entities and services that can contribute to order confirmation.  When OrderConfirmation collaboration is started, it puts itself into current CallContext.  All calls and nested calls within using() block will be able to access the collaboration objects provided by the OrderConfirmation.">
+    <Position X="3.062" Y="0.5" Height="1.406" Width="4.471" />
+  </Comment>
+  <Comment CommentText="Order confirmation and any nested calls, can use this collabortion entity, as well as any other collaboration object that is started in the current call context.  ValidationContext and LoggingContext are examples of some of the orthogonal behaviors that aren't directly relate to Order processing itself, but are more general.  So they aren't shown here as part of the OrderConfirmation collaboration.  Email service could be treated in a similar way.  But for the sake of this example, it is included as an explicit part of the OrderCollaboration.">
+    <Position X="3.74" Y="5.635" Height="1.521" Width="4.575" />
+  </Comment>
+  <Comment CommentText="See OrderService class to find out how this is used.">
+    <Position X="0.719" Y="5.552" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="NorthwindDataModel.Collaboration.Entities.OrderConfirmation">
+    <Position X="4.25" Y="2.25" Width="2.25" />
+    <AssociationLine Name="EmailService" Type="NorthwindDataModel.ServiceInterfaces.IEmailService" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.938" Y="3.483" />
+        <Point X="4.938" Y="5.031" />
+        <Point X="5.5" Y="5.031" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Collaboration\Entities\OrderConfirmation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Order" />
+      <Property Name="EmailService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NorthwindDataModel.Customer" Collapsed="true">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQkiQAAloChAEiAYcAWgAEIhmCMAAAAmoEAKIDBAAEI=</HashCode>
+      <FileName>EntityCustomization\Customer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NorthwindDataModel.Order" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAdgIFBhAQhAkJAASAWAoGZB2KAEEgBAsTQOASABgCg=</HashCode>
+      <FileName>EntityCustomization\Order.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="NorthwindDataModel.ServiceInterfaces.IEmailService" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceInterfaces\IEmailService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

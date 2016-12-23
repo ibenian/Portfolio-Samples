@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="All collaboration objects put themselves into CallContext when they are instantiated and remove themselves form CallContext when they are disposed.  So it is best to use thise objects within a using() block:&#xD;&#xA;     using(new .....())&#xD;&#xA;     {&#xD;&#xA;           // context is available here and in all nested calls.&#xD;&#xA;     }">
+    <Position X="4.979" Y="0.573" Height="1.344" Width="3.648" />
+  </Comment>
+  <Class Name="SOCF.NamedCollaborationContext" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="2.75" />
+    <AssociationLine Name="SuperContext" Type="SOCF.NamedCollaborationContext" ManuallyRouted="true">
+      <Path>
+        <Point X="2.69" Y="1.75" />
+        <Point X="2.69" Y="0.937" />
+        <Point X="3.581" Y="0.937" />
+        <Point X="3.581" Y="1.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.411" Y="0.456" Height="0.182" Width="1.147" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACEAAADBAAAFACgAAgAgAAAAFAAAgCAACIIAAAAA=</HashCode>
+      <FileName>NamedCollaborationContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SuperContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SOCF.CollaborationContext&lt;T&gt;" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>CollaborationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOCF.CustomCollaboration" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomCollaboration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOCF.IdentityMap&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="5" Width="3.25" />
+    <AssociationLine Name="ParentScope" Type="SOCF.IdentityMap&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="6.361" Y="5.691" />
+        <Point X="6.361" Y="5.941" />
+        <Point X="7.413" Y="5.941" />
+        <Point X="7.413" Y="5.691" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAJABQAgCggAAAAgAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>IdentityMap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="scope" />
+      <Property Name="ParentScope" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="SOCF.IdentityMapScope">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAABAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IdentityMap.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
