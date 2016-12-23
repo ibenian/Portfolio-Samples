@@ -10,3 +10,6 @@ against an object model and execute it against various different databases.  Unl
 EQL supports much of the T-SQL and PL-SQL languages.  Many ORM frameworks aim to completely 
 isolate database access by abstracting a common subset of the query languages, while EQL starts with
 the database and provides a bridge to OO world with a much richer query language.
+
+###SimpleObjectCollaborationFramework
+A library that simplifies complex interactions between objects by providing a new mechanism of instance discovery and lifetime management.  The collaboration context will just be accessible along the code execution path until using() block is exited.  All objects that are in the calling method as well as all nested methods will be able to access this shared collaboration context.
