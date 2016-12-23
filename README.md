@@ -2,7 +2,7 @@
 Some code examples from my coding projects
 
 ###GroundWarLogic.cs
-Functional asynchrounous game programming sample based on my Rx based game engine.
+Functional asynchrounous game programming sample based on my Rx based game engine.  I've published more than 10 mobile games based on this engine which makes it possible to write complex game logic in a simple and maintainable fashion.
 
 ###EntityQueryLanguage
 EQL (Entity Query Language) is a fluent API that I've developed to write SQL queries in a strongly typed fashion
