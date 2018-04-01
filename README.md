@@ -5,7 +5,7 @@ Some code examples from my coding projects
 Functional asynchrounous game programming sample based on my Rx based game engine.  I've published more than 10 mobile games based on this engine which makes it possible to write complex game logic in a simple and maintainable fashion.
 
 ![Timber Words](/Images/timberwords.png)
-![Aliens vs Bubbles](/Images/AliensVsBubbles.png)
+![Aliens vs Bubbles](/Images/aliensvsbubbles.jpg)
 
 My Mobile Games
 https://omegadot.wordpress.com/
