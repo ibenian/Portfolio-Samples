@@ -4,7 +4,7 @@ Some code examples from my coding projects
 ## GroundWarLogic.cs and TimberWordsLogic.cs
 Functional asynchrounous game programming sample based on my Rx based game engine.  I've published more than 10 mobile games based on this engine which makes it possible to write complex game logic in a simple and maintainable fashion.
 
-![GitHub Logo](/images/AliensVsBubbles.png)
+![Aliens vs Bubbles](/Images/AliensVsBubbles.png)
 Format: ![Alt Text](url)
 
 My Mobile Games
